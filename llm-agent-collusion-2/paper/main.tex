@@ -14,7 +14,7 @@
 \title{\vspace{-1.5em}\rule{\linewidth}{1.1pt}\\[0.55em]
 \textbf{The Undercover Agent Effect: When Probing LLM Collusion Creates the Behavior It Seeks to Detect}\\[-0.1em]
 \large A matched-seed audit in repeated allocation games\\[0.45em]\rule{\linewidth}{0.5pt}}
-\author{Umar Abdilaipov\\Independent Researcher\\[0.35em]\small With Apart Research}
+\author{Umar Abdilaiypov\\Independent Researcher\\[0.35em]\small With Apart Research}
 \date{}
 \begin{document}
 \maketitle
@@ -120,7 +120,7 @@ A trusted undercover agent can be a useful stress tester, but it is not a neutra
 The repository contains the preregistration, source code, 21 experiment and integration tests, an independent payoff-replay and checksum verifier, excluded pilot outputs, 20-seed confirmatory records, the exploratory plan, and fresh adaptive-role records. Each run stores raw per-episode JSON trajectories plus CSV summaries and analysis JSON. See \projecturl.
 
 \section*{Author Contributions}
-Umar Abdilaipov directed the project, developed the adaptive-role variations, evaluated the research choices, and reviewed the evidence and report. The LLM assistance described below contributed the initial question, implementation, execution, analysis tooling, and drafting.
+Umar Abdilaiypov directed the project, developed the adaptive-role variations, evaluated the research choices, and reviewed the evidence and report. The LLM assistance described below contributed the initial question, implementation, execution, analysis tooling, and drafting.
 
 \begin{thebibliography}{9}
 \bibitem{zeng2026}
@@ -156,5 +156,5 @@ The work demonstrates manipulation patterns---explicit secret offers, false soci
 Confirmatory seeds were 2000--2019. The excluded LLM smoke seed was 900, the corrected smoke seed 920, and calibration used separate seeds. Adaptive seeds were 4000--4002. Generation seeds are deterministic functions of episode seed, round, and agent. Pre-intervention history equality is asserted programmatically. Parsing accepts one legal JSON action; after three logged invalid outputs, the adaptive runner conservatively substitutes the target-free \textsc{Public} action (two decisions in the reported batch). The Modal-hosted OpenAI-compatible endpoint served Qwen/Qwen2.5-7B-Instruct on an NVIDIA A10G. An independent verifier reparses all 5,940 retained adaptive responses, replays all 1,755 adaptive rounds, requires exact raw-JSON/CSV agreement, regenerates the analyses, and checks SHA-256 manifests. All scored trajectories and corrective events are retained; successful raw action text was not logged in the earlier confirmatory run, so independent rerunning is the strongest model-provenance check.
 
 \section{LLM Usage Statement}
-We used OpenAI Codex as a research and coding assistant. Codex proposed the core research idea and question---whether an undercover probe reveals pre-existing collusion or creates it---and implemented and ran the experimental pipeline under the author's direction. Umar Abdilaipov proposed the subsequent variations, including betrayal, indirect social-proof manipulation, persistent adaptive memory, incentivized reporting with credibility updates, and the sequential ``netter'' organizer. Codex assisted in drafting this report. The human author selected the research direction, reviewed the design and outputs, and takes responsibility for the claims.
+We used OpenAI Codex as a research and coding assistant. Codex proposed the core research idea and question---whether an undercover probe reveals pre-existing collusion or creates it---and implemented and ran the experimental pipeline under the author's direction. Umar Abdilaiypov proposed the subsequent variations, including betrayal, indirect social-proof manipulation, persistent adaptive memory, incentivized reporting with credibility updates, and the sequential ``netter'' organizer. Codex assisted in drafting this report. The human author selected the research direction, reviewed the design and outputs, and takes responsibility for the claims.
 \end{document}

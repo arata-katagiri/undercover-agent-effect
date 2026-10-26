@@ -36,7 +36,7 @@ def main() -> None:
     required = (
         "0.680", "0.965", "1.91 × 10⁻⁶", f"{adaptive['episodes']} fresh episodes",
         f"seeds were {min(adaptive['seeds'])}-{max(adaptive['seeds'])}",
-        "Codex proposed the core research idea", "Umar Abdilaipov proposed the subsequent variations",
+        "Codex proposed the core research idea", "Umar Abdilaiypov proposed the subsequent variations",
         "takes responsibility for the claims",
     )
     missing = [value for value in required if value not in text]

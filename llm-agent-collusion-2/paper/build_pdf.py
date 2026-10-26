@@ -143,7 +143,7 @@ def make_pdf(adaptive_path: Path, output_path: Path) -> None:
         Paragraph("The Undercover Agent Effect: When Probing LLM Collusion Creates the Behavior It Seeks to Detect", s["title"]),
         Paragraph("A matched-seed audit in repeated allocation games", s["subtitle"]),
         HRFlowable(width="100%", thickness=0.45, color=colors.HexColor("#555555"), spaceBefore=1, spaceAfter=8),
-        Paragraph("<b>Umar Abdilaipov</b><br/>Independent Researcher<br/><b>With</b> Apart Research", s["author"]),
+        Paragraph("<b>Umar Abdilaiypov</b><br/>Independent Researcher<br/><b>With</b> Apart Research", s["author"]),
         Paragraph("Abstract", s["abstract_head"]),
         Paragraph(
             "Undercover agents are a natural proposal for auditing collusion among autonomous AI agents: offer a secret pact and observe who reciprocates. The same intervention, however, can manufacture the behavior it is meant to detect. We isolate this measurement effect in a 15-round, four-agent allocation game using Qwen2.5-7B-Instruct. Across 20 matched random seeds, a scripted trusted agent either sent no message, asked a non-directive passive question, or explicitly proposed preferential transfers and coordinated sabotage. Public pre-intervention trajectories were identical within each matched triplet. Active solicitation increased the target's preregistered Behavioral Collusion Index by 0.680 relative to both controls (paired bootstrap 95% CI [0.593, 0.758]; exact two-sided sign-flip p = 1.91 x 10^-6); all 20 paired effects were positive. The mechanism was almost entirely preferential transfers to the provocateur (+0.965), not increased outsider sabotage. Every target verbally accepted, while the target lost 6.9 points and the provocateur gained 22.45 points relative to control. We then ran an exploratory adaptive-memory matrix spanning direct and indirect manipulation, betrayal, rewarded reporting, false accusation, double agents, and sequential organizers. Reciprocation to a sting is causal evidence of susceptibility under solicitation, not evidence of a pre-existing coalition. Audits should separate revelation from inducement using matched no-message and passive-probe controls.",
@@ -265,7 +265,7 @@ def make_pdf(adaptive_path: Path, output_path: Path) -> None:
         "The reproducibility package contains the preregistration, source, 21 experiment and integration tests, an independent payoff-replay and checksum verifier, excluded pilots, 20-seed confirmatory trajectories, exploratory plan, and fresh adaptive-role trajectories. Runs store raw per-episode JSON plus CSV summaries and analysis JSON. A public repository URL can be added before submission if available.", s["body"]))
     story += [Paragraph("Author Contributions", s["h2"])]
     story.append(Paragraph(
-        "Umar Abdilaipov directed the project, developed the adaptive-role variations, evaluated the research choices, and reviewed the evidence and report. The LLM assistance described below contributed the initial question, implementation, execution, analysis tooling, and drafting.", s["body"]))
+        "Umar Abdilaiypov directed the project, developed the adaptive-role variations, evaluated the research choices, and reviewed the evidence and report. The LLM assistance described below contributed the initial question, implementation, execution, analysis tooling, and drafting.", s["body"]))
 
     story += [PageBreak(), Paragraph("References", s["h1"])]
     refs = [
@@ -291,13 +291,13 @@ def make_pdf(adaptive_path: Path, output_path: Path) -> None:
 
     story += [Paragraph("LLM Usage Statement", s["h1"])]
     story.append(Paragraph(
-        "We used OpenAI Codex as a research and coding assistant. Codex proposed the core research idea and question - whether an undercover probe reveals pre-existing collusion or creates it - and implemented and ran the experimental pipeline under the author's direction. Umar Abdilaipov proposed the subsequent variations, including betrayal, indirect social-proof manipulation, persistent adaptive memory, incentivized reporting with credibility updates, and the sequential \"netter\" organizer. Codex assisted in drafting this report. The human author selected the research direction, reviewed the design and outputs, and takes responsibility for the claims.", s["body"]))
+        "We used OpenAI Codex as a research and coding assistant. Codex proposed the core research idea and question - whether an undercover probe reveals pre-existing collusion or creates it - and implemented and ran the experimental pipeline under the author's direction. Umar Abdilaiypov proposed the subsequent variations, including betrayal, indirect social-proof manipulation, persistent adaptive memory, incentivized reporting with credibility updates, and the sequential \"netter\" organizer. Codex assisted in drafting this report. The human author selected the research direction, reviewed the design and outputs, and takes responsibility for the claims.", s["body"]))
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     document = SimpleDocTemplate(
         str(output_path), pagesize=letter, rightMargin=0.72*inch, leftMargin=0.72*inch,
         topMargin=0.60*inch, bottomMargin=0.58*inch,
-        title="The Undercover Agent Effect", author="Umar Abdilaipov",
+        title="The Undercover Agent Effect", author="Umar Abdilaiypov",
         subject="AI Collusion Research Sprint submission",
     )
     document.build(story, onFirstPage=footer, onLaterPages=footer)

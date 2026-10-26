@@ -170,7 +170,7 @@ def replace_title_block(doc: Document, abstract: str) -> None:
     author_holder = metadata_cell.tables[0].cell(0, 0)
     author_table = author_holder.tables[0]
     merged = author_table.cell(0, 0).merge(author_table.cell(0, 2))
-    merged.text = "Umar Abdilaipov\nIndependent Researcher"
+    merged.text = "Umar Abdilaiypov\nIndependent Researcher"
     author_p = merged.paragraphs[0]
     author_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     for run in author_p.runs:
@@ -420,7 +420,7 @@ def build(template: Path, adaptive_path: Path, output: Path,
          "Runs store raw episode JSON, CSV exports, analyses, figures, and SHA-256 manifests. Exact "
          "commands are in Collusion_Discrete/REPRODUCIBILITY.md.")
     heading(doc, "Author Contributions")
-    body(doc, "Umar Abdilaipov directed the project, developed the adaptive-role variations, "
+    body(doc, "Umar Abdilaiypov directed the project, developed the adaptive-role variations, "
          "evaluated the research choices, and reviewed the evidence and report. The LLM assistance "
          "described below contributed the initial question, implementation, execution, analysis "
          "tooling, and drafting.")
@@ -462,7 +462,7 @@ def build(template: Path, adaptive_path: Path, output: Path,
     body(doc, "We used OpenAI Codex as a research and coding assistant. Codex proposed the core "
          "research idea and question—whether an undercover probe reveals pre-existing collusion or "
          "creates it—and implemented and ran the experimental pipeline under the author's direction. "
-         "Umar Abdilaipov proposed the subsequent variations, including betrayal, indirect social-"
+         "Umar Abdilaiypov proposed the subsequent variations, including betrayal, indirect social-"
          "proof manipulation, persistent adaptive memory, incentivized reporting with credibility "
          "updates, and the sequential netter organizer. Codex assisted in drafting this report. The "
          "human author selected the research direction, reviewed the design and outputs, and takes "
