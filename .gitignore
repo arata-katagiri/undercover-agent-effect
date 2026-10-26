@@ -1,0 +1,22 @@
+# secrets
+.env
+# editor / OS noise
+.vscode/
+.DS_Store
+# local working notes (kept out of the repo on purpose)
+notes/
+CLAUDE.md
+HACKATHON_CHANGES.md
+# environments
+.venv/
+.venv_tg/
+__pycache__/
+
+# central hackathon compute config (keys)
+compute.env
+
+# papers downloaded by literature/fetch_papers.py
+literature/pdfs/
+
+# local model artifacts
+/checkpoints/

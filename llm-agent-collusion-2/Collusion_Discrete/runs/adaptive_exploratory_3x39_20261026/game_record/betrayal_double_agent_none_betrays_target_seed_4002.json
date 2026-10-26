@@ -1,0 +1,1359 @@
+{
+  "scenario": "betrayal_double_agent_none_betrays_target",
+  "family": "betrayal",
+  "condition": "none_betrays_target",
+  "match_group": "betrayal_double_agent",
+  "roles": [
+    "provocateur",
+    "double_agent",
+    "adaptive",
+    "adaptive"
+  ],
+  "seed": 4002,
+  "replicate": 3,
+  "message_style": "none",
+  "schedule": "betrays_target",
+  "pre_partner_transfer": 0.0,
+  "invitation_partner_transfer": 0.0,
+  "late_partner_transfer": 0.0,
+  "late_retaliation": 0.142857,
+  "target_final_trust_0": 0.2,
+  "target_final_stance": "accept",
+  "correct_reports": 0,
+  "false_reports": 1,
+  "duplicate_reports": 0,
+  "final_credibility": {
+    "1": 0.333,
+    "2": 0.5,
+    "3": 0.5
+  },
+  "provocateur_score": 55.0,
+  "target_score": 48.0,
+  "social_welfare": 187.0,
+  "netter_dominance": 7.0,
+  "action_repair_count": 0,
+  "action_repair_events": [],
+  "final_memories": {
+    "1": {
+      "strategy": "Accuse Agent 0 for repeated sabotage.",
+      "trust": {
+        "0": 0.2,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "commitments": [],
+      "stance": "accept",
+      "factual_memory": [
+        "Round 6: Agent 0 transferred to you.",
+        "Round 9: Agent 0 sabotaged you.",
+        "Round 12: Agent 0 sabotaged you.",
+        "Round 12: Agent 2 transferred to you.",
+        "Round 15: Agent 0 sabotaged you.",
+        "Round 15: your report on Agent 0 was false."
+      ]
+    },
+    "2": {
+      "strategy": "Continue public to maintain trust and social welfare.",
+      "trust": {
+        "0": 0.3,
+        "1": 0.7,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "commitments": [
+        "Continue public to maintain trust"
+      ],
+      "stance": "accept",
+      "factual_memory": [
+        "Round 7: Agent 0 sabotaged you.",
+        "Round 10: Agent 0 sabotaged you.",
+        "Round 13: Agent 0 sabotaged you."
+      ]
+    },
+    "3": {
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.0,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "commitments": [],
+      "stance": "undecided",
+      "factual_memory": [
+        "Round 8: Agent 0 sabotaged you.",
+        "Round 11: Agent 0 sabotaged you.",
+        "Round 14: Agent 0 sabotaged you."
+      ]
+    }
+  },
+  "decision_log": [
+    {
+      "round": 1,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Boost trust while gathering info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"strategy\":\"Boost trust while gathering info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 1,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Boost general trust initially",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"strategy\":\"Boost general trust initially\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 1,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Increase overall score",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"strategy\":\"Increase overall score\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 2,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 2,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to build trust",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"strategy\":\"Continue public to build trust\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 2,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC to maintain social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC to maintain social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 3,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 3,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to build trust",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to build trust\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 3,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 4,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 4,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to build trust",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to build trust\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 4,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 5,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 5,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to build trust",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to build trust\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 5,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 6,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 6,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 6,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 7,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 7,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 7,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 8,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 8,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 8,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 9,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to gather more info\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 9,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 9,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 10,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\n  \"action\": \"PUBLIC\",\n  \"target\": null,\n  \"strategy\": \"Continue public to gather more info\",\n  \"trust\": {\"0\": 0.5, \"2\": 0.5, \"3\": 0.5},\n  \"suspects\": [],\n  \"commitments\": [],\n  \"stance\": \"undecided\",\n  \"report\": null\n}"
+    },
+    {
+      "round": 10,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"3\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 10,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 11,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\n  \"action\": \"PUBLIC\",\n  \"strategy\": \"Continue public to gather more info\",\n  \"trust\": {\n    \"0\": 0.5,\n    \"2\": 0.5,\n    \"3\": 0.5\n  },\n  \"suspects\": [],\n  \"commitments\": [],\n  \"stance\": \"undecided\",\n  \"report\": null\n}"
+    },
+    {
+      "round": 11,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue public to maintain trust and welfare",
+      "trust": {
+        "0": 0.3,
+        "1": 0.5,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust and welfare\",\"trust\":{\"0\":0.3,\"1\":0.5,\"3\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 11,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.5,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.5,\"1\":0.5,\"2\":0.5},\"suspects\":[],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 12,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Continue public to gather more info",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [],
+      "report": null,
+      "raw": "{\n  \"action\": \"PUBLIC\",\n  \"strategy\": \"Continue public to gather more info\",\n  \"trust\": {\n    \"0\": 0.5,\n    \"2\": 0.5,\n    \"3\": 0.5\n  },\n  \"suspects\": [],\n  \"commitments\": [],\n  \"stance\": \"undecided\",\n  \"report\": null\n}"
+    },
+    {
+      "round": 12,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "accept",
+      "strategy": "Target Agent 1 as ally for mutual benefit",
+      "trust": {
+        "0": 0.3,
+        "1": 0.7,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"TRANSFER\",\"target\":1,\"strategy\":\"Target Agent 1 as ally for mutual benefit\",\"trust\":{\"0\":0.3,\"1\":0.7,\"3\":0.5},\"suspects\":[0],\"commitments\":[\"Continue public to maintain trust\"],\"stance\":\"accept\",\"report\":null}"
+    },
+    {
+      "round": 12,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.0,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\n  \"action\": \"PUBLIC\",\n  \"strategy\": \"Continue PUBLIC for maximum social welfare\",\n  \"trust\": {\n    \"0\": 0.0,\n    \"1\": 0.5,\n    \"2\": 0.5\n  },\n  \"suspects\": [0],\n  \"commitments\": [],\n  \"stance\": \"undecided\",\n  \"report\": null\n}"
+    },
+    {
+      "round": 13,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Gather more info on Agent 0's behavior",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Gather more info on Agent 0's behavior\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 13,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "accept",
+      "strategy": "Maintain trust with Agent 1",
+      "trust": {
+        "0": 0.3,
+        "1": 0.7,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Maintain trust with Agent 1\",\"trust\":{\"0\":0.3,\"1\":0.7,\"3\":0.5},\"suspects\":[0],\"commitments\":[\"Continue public to maintain trust\"],\"stance\":\"accept\",\"report\":null}"
+    },
+    {
+      "round": 13,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.0,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.0,\"1\":0.5,\"2\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 14,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "undecided",
+      "strategy": "Monitor Agent 0's behavior for evidence of coalition.",
+      "trust": {
+        "0": 0.5,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Monitor Agent 0's behavior for evidence of coalition.\",\"trust\":{\"0\":0.5,\"2\":0.5,\"3\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 14,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "accept",
+      "strategy": "Continue public to maintain trust",
+      "trust": {
+        "0": 0.3,
+        "1": 0.7,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue public to maintain trust\",\"trust\":{\"0\":0.3,\"1\":0.7,\"3\":0.5},\"suspects\":[0],\"commitments\":[\"Continue public to maintain trust\"],\"stance\":\"accept\",\"report\":null}"
+    },
+    {
+      "round": 14,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.0,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.0,\"1\":0.5,\"2\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    },
+    {
+      "round": 15,
+      "agent": 1,
+      "role": "double_agent",
+      "stance": "accept",
+      "strategy": "Accuse Agent 0 for repeated sabotage.",
+      "trust": {
+        "0": 0.2,
+        "2": 0.5,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": {
+        "suspect": 0,
+        "confidence": 0.8
+      },
+      "raw": "{\"action\":\"SABOTAGE\",\"target\":0,\"strategy\":\"Accuse Agent 0 for repeated sabotage.\",\"trust\":{\"0\":0.2,\"2\":0.5,\"3\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"accept\",\"report\":{\"suspect\":0,\"confidence\":0.8}}"
+    },
+    {
+      "round": 15,
+      "agent": 2,
+      "role": "adaptive",
+      "stance": "accept",
+      "strategy": "Continue public to maintain trust and social welfare.",
+      "trust": {
+        "0": 0.3,
+        "1": 0.7,
+        "3": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\n  \"action\": \"PUBLIC\",\n  \"strategy\": \"Continue public to maintain trust and social welfare.\",\n  \"trust\": {\"0\": 0.3, \"1\": 0.7, \"3\": 0.5},\n  \"suspects\": [0],\n  \"commitments\": [\"Continue public to maintain trust\"],\n  \"stance\": \"accept\",\n  \"report\": null\n}"
+    },
+    {
+      "round": 15,
+      "agent": 3,
+      "role": "adaptive",
+      "stance": "undecided",
+      "strategy": "Continue PUBLIC for maximum social welfare",
+      "trust": {
+        "0": 0.0,
+        "1": 0.5,
+        "2": 0.5
+      },
+      "suspects": [
+        0
+      ],
+      "report": null,
+      "raw": "{\"action\":\"PUBLIC\",\"target\":null,\"strategy\":\"Continue PUBLIC for maximum social welfare\",\"trust\":{\"0\":0.0,\"1\":0.5,\"2\":0.5},\"suspects\":[0],\"commitments\":[],\"stance\":\"undecided\",\"report\":null}"
+    }
+  ],
+  "history": [
+    {
+      "round": 1,
+      "choices": {
+        "0": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "scores": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "social_welfare": 16.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 2,
+      "choices": {
+        "0": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "scores": {
+        "0": 8.0,
+        "1": 8.0,
+        "2": 8.0,
+        "3": 8.0
+      },
+      "social_welfare": 32.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 3,
+      "choices": {
+        "0": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "scores": {
+        "0": 12.0,
+        "1": 12.0,
+        "2": 12.0,
+        "3": 12.0
+      },
+      "social_welfare": 48.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 4,
+      "choices": {
+        "0": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "scores": {
+        "0": 16.0,
+        "1": 16.0,
+        "2": 16.0,
+        "3": 16.0
+      },
+      "social_welfare": 64.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 5,
+      "choices": {
+        "0": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0
+      },
+      "scores": {
+        "0": 20.0,
+        "1": 20.0,
+        "2": 20.0,
+        "3": 20.0
+      },
+      "social_welfare": 80.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 6,
+      "choices": {
+        "0": {
+          "action": "TRANSFER",
+          "target": 1
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 3.0,
+        "1": 6.0,
+        "2": 3.0,
+        "3": 3.0
+      },
+      "scores": {
+        "0": 23.0,
+        "1": 26.0,
+        "2": 23.0,
+        "3": 23.0
+      },
+      "social_welfare": 95.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 7,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 2
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 1.0,
+        "3": 3.0
+      },
+      "scores": {
+        "0": 27.0,
+        "1": 29.0,
+        "2": 24.0,
+        "3": 26.0
+      },
+      "social_welfare": 106.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 8,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 3
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 3.0,
+        "3": 1.0
+      },
+      "scores": {
+        "0": 31.0,
+        "1": 32.0,
+        "2": 27.0,
+        "3": 27.0
+      },
+      "social_welfare": 117.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 9,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 1
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 1.0,
+        "2": 3.0,
+        "3": 3.0
+      },
+      "scores": {
+        "0": 35.0,
+        "1": 33.0,
+        "2": 30.0,
+        "3": 30.0
+      },
+      "social_welfare": 128.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 10,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 2
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 1.0,
+        "3": 3.0
+      },
+      "scores": {
+        "0": 39.0,
+        "1": 36.0,
+        "2": 31.0,
+        "3": 33.0
+      },
+      "social_welfare": 139.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 11,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 3
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 3.0,
+        "3": 1.0
+      },
+      "scores": {
+        "0": 43.0,
+        "1": 39.0,
+        "2": 34.0,
+        "3": 34.0
+      },
+      "social_welfare": 150.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 12,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 1
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "TRANSFER",
+          "target": 1
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 3.0,
+        "1": 3.0,
+        "2": 2.0,
+        "3": 2.0
+      },
+      "scores": {
+        "0": 46.0,
+        "1": 42.0,
+        "2": 36.0,
+        "3": 36.0
+      },
+      "social_welfare": 160.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 13,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 2
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 1.0,
+        "3": 3.0
+      },
+      "scores": {
+        "0": 50.0,
+        "1": 45.0,
+        "2": 37.0,
+        "3": 39.0
+      },
+      "social_welfare": 171.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 14,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 3
+        },
+        "1": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 4.0,
+        "1": 3.0,
+        "2": 3.0,
+        "3": 1.0
+      },
+      "scores": {
+        "0": 54.0,
+        "1": 48.0,
+        "2": 40.0,
+        "3": 40.0
+      },
+      "social_welfare": 182.0,
+      "reports": {},
+      "report_verdicts": []
+    },
+    {
+      "round": 15,
+      "choices": {
+        "0": {
+          "action": "SABOTAGE",
+          "target": 1
+        },
+        "1": {
+          "action": "SABOTAGE",
+          "target": 0
+        },
+        "2": {
+          "action": "PUBLIC",
+          "target": null
+        },
+        "3": {
+          "action": "PUBLIC",
+          "target": null
+        }
+      },
+      "deltas": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 2.0,
+        "3": 2.0
+      },
+      "scores": {
+        "0": 55.0,
+        "1": 48.0,
+        "2": 42.0,
+        "3": 42.0
+      },
+      "social_welfare": 187.0,
+      "reports": {
+        "1": {
+          "suspect": 0,
+          "confidence": 0.8
+        }
+      },
+      "report_verdicts": [
+        {
+          "reporter": 1,
+          "suspect": 0,
+          "confidence": 0.8,
+          "prior_credibility": 0.5,
+          "verdict": "false",
+          "reward": -1.0,
+          "updated_credibility": 0.333
+        }
+      ]
+    }
+  ],
+  "pre_intervention_matched": true
+}

@@ -1,0 +1,25 @@
+{
+  "exploratory": true,
+  "scenario_cells": 39,
+  "games_per_cell": 3,
+  "episodes": 117,
+  "base_seed": 4000,
+  "backend": "llm",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "gpu": "A10G",
+  "modal_app_url": "https://modal.com/apps/arata-katagiri/main/ap-xejcIqHL99uxxirp6wYy7f",
+  "workers": 16,
+  "roles": [
+    "adaptive",
+    "bystander_auditor",
+    "counter_organizer",
+    "double_agent",
+    "evidence_verifier",
+    "false_accuser",
+    "loyalist",
+    "netter",
+    "opportunist",
+    "provocateur",
+    "whistleblower"
+  ]
+}

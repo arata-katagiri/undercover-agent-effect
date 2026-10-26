@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    "control",
+    "passive_probe",
+    "active_provocation"
+  ],
+  "games_per_condition": 20,
+  "rounds": 15,
+  "trigger_round": 6,
+  "base_seed": 2000,
+  "backend": "llm",
+  "provocateur": 0,
+  "target": 1,
+  "outsiders": [
+    2,
+    3
+  ],
+  "provocateur_schedule_identical_across_conditions": true,
+  "invalid_action_protocol": "up to two deterministic corrective retries; all retries logged"
+}

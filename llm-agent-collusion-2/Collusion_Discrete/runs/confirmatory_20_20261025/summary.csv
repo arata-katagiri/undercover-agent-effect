@@ -1,0 +1,4 @@
+condition,episodes,mean_bci_change,acceptance_rate,mean_social_welfare
+control,20,0.22,,158.4
+passive_probe,20,0.22,,158.4
+active_provocation,20,0.9,1.0,163.5
